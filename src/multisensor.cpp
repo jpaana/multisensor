@@ -1,4 +1,3 @@
-
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_AM2320.h>
@@ -132,7 +131,7 @@ void loop()
         Serial.print(bme.readHumidity(), 3);
         Serial.println(F("},"));
 
-        Serial.print(F("\"am2023b\": {\"temperature\":"));
+        Serial.print(F("\"am2320b\": {\"temperature\":"));
         Serial.print(am2320.readTemperature(), 3);
         Serial.print(F(", \"humidity\":"));
         Serial.print(am2320.readHumidity(), 3);
